@@ -38,6 +38,12 @@
 	transition: 0.3s;
 }
 
+/* Active/current link */
+.sidenav a.active {
+	background-color: dimgrey;
+	color: white;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
 	color: #f1f1f1;
@@ -55,7 +61,6 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	transition: margin-left .5s;
-	padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -72,9 +77,24 @@
 
 
 
+/* margin (top, right, bottom, left) */
 
+.title-bar {
+	height: 5vh;
+	background-color: #212529;
+	color: white;
+	font-size: 30px;
+}
 
+.menuIcon {
+	float: left;
+	margin: 10px 0px 0px 10px;
+}
 
+.title-bar-name {
+	text-align: center;
+	margin: 0 auto;
+}
 
 
 .landing-page {
@@ -121,7 +141,7 @@ li {
 	font-weight: bold;
 }
 
-.body {
+.body_content {
 	float: none;
 	margin: 0 auto;
 	margin-top: 50px;
