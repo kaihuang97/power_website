@@ -5,36 +5,34 @@
 	<meta charset="UTF-8">
 	<title>UCSC Center for Power and Energy Systems</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-	<div class="container-fluid">
-		<!--Navigation Bar (start)-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="index.html">UCSC Center for Power and Energy Systems</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="faculty.html">Faculty</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="research.html">Research</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--Navigation Bar (end)-->
+	<!--Navigation Bar (start)-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="faculty.html">Faculty</a>
+		<a href="research.html">Research</a>
+		<a href="publications.html">Publications</a>
+		<a class="active" href="about-us.html">About&nbsp;Us</a>
+	</div>
+	<!--Navigation Bar (end)-->
+
+	<!--Title Bar (start)-->
+	<div class="row">
+		<div class="col-sm-12 title-bar">
+			<i class="fas fa-bars menuIcon" onmouseover="openNav()"></i>
+			<p class="title-bar-name">UCSC Center for Power and Energy Systems</p>
+
+		</div>
+	</div>
+	<!--Title Bar (end)-->
+
+	<div id="main" onmouseover="closeNav()">
 
 		<!--Title (start)-->
 		<div class="title">
@@ -68,6 +66,11 @@
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
+			<p>
+				<br />
+				<br />
+				<br />
+			</p>
 		</div>
 		<!--Body (end)-->
 
@@ -87,7 +90,7 @@
 		</div>
 		<!--Footer (end)-->
 	</div>
-
+	<script src="js/sideNav.js"></script>
 </body>
 
 </html>
