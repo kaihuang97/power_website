@@ -75,7 +75,8 @@
 }
 
 .landing-page > figure {
-	animation: imageAnimation 20s linear infinite 0s;
+	animation: imageAnimation 30s linear infinite 0s;
+
 	background-size: cover;
 	background-position: center;
 	height: 100%;
@@ -89,45 +90,40 @@
 }
 
 .landing-page > figure:nth-child(2) {
-	animation-delay: 4s;
+	animation-delay: 6s;
 	background-image: url("/images/power-grid.jpg");
 }
 
 .landing-page > figure:nth-child(3) {
-	animation-delay: 8s;
+	animation-delay: 12s;
 	background-image: url('/images/renewable_energy.jpg');
 }
 
 .landing-page > figure:nth-child(4) {
-	animation-delay: 12s;
+	animation-delay: 18s;
 	background-image: url('/images/power_grid_us.jpg');
 }
 
 .landing-page > figure:nth-child(5) {
-	animation-delay: 16s;
+	animation-delay: 24s;
 	background-image: url('/images/machine_learning.jpg');
 }
 
 @keyframes imageAnimation {
 	0% {
 		animation-timing-function: ease-in;
-		opacity: 0;
 	}
 
-	5% {
+	3% {
 		animation-timing-function: ease-out;
 		opacity: 1;
 	}
 
-	50% {
+	20% {
 		opacity: 1;
 	}
 
-	75% {
-		opacity: 0;
-	}
-
-	100% {
+	25% {
 		opacity: 0;
 	}
 }
