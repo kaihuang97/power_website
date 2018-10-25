@@ -1,4 +1,5 @@
 /* The side navigation menu */
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -6,19 +7,37 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111111;
+	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 60px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.sidenav a {
-	padding: 8px 8px 8px 32px;
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+	padding: 6px 8px 6px 16px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	color: #818181;
 	display: block;
-	transition: 0.3s;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+	color: #f1f1f1;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+	color: white;
 }
 
 .sidenav a.active {
@@ -26,16 +45,31 @@
 	color: white;
 }
 
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
 .sidenav .closebtn {
 	position: absolute;
 	top: 0;
-	right: 25px;
 	font-size: 36px;
-	margin-left: 50px;
+	margin-left: 200px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+}
+
+.dropdown-container a.active {
+	padding-right: 6px;
+	background-color: dimgrey;
+	color: white;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+	float: right;
+	padding-right: 15px;
+	padding-top: 5px;
 }
 
 @media screen and (max-height: 450px) {
@@ -182,7 +216,7 @@ li {
 }
 
 
-/* Filter Table Search */
+/********************** Filter Table Search **********************/
 
 #search-input {
 	width: 100%;
